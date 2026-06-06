@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "import", "promise", "vitest"],
+  "categories": {
+    "suspicious": "deny",
+    "perf": "deny"
+  },
+  "rules": {
+    "typescript/no-explicit-any": "deny",
+    "typescript/consistent-type-assertions": ["deny", { "assertionStyle": "never" }],
+    "typescript/no-non-null-assertion": "deny",
+    "react/rules-of-hooks": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/button-has-type": "error",
+    "react/react-in-jsx-scope": "allow",
+    "no-await-in-loop": "allow",
+    "import/no-unassigned-import": ["deny", { "allow": ["**/*.css", "@testing-library/jest-dom/**"] }],
+    "vitest/valid-expect": ["error", { "maxArgs": 2 }]
+  }
+}
