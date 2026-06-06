@@ -22,7 +22,7 @@ End-to-end type safety means the web app **infers its API types from the server*
 ## Quick start
 
 ```bash
-pnpm dlx create-turbo@latest --example https://github.com/<you>/turbo-template
+pnpm dlx create-turbo@latest --example https://github.com/aalyokhin/turbo-template
 cd <your-app>
 pnpm setup                # rename the project (optional)
 pnpm install
