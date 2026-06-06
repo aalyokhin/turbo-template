@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@orpc/client": "^1.13.0",
@@ -37,8 +38,9 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^5.2.0",
+    "@vitest/coverage-v8": "4.1.8",
     "autoprefixer": "^10.4.20",
-    "jsdom": "^28.1.0",
+    "jsdom": "^29.1.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",

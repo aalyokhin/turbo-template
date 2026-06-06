@@ -16,12 +16,13 @@
     "build": "tsup",
     "start": "node dist/src/index.js",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
-    "@libsql/client": "^0.14.0",
+    "@libsql/client": "^0.17.3",
     "@orpc/server": "^1.13.0",
     "@repo/db": "workspace:*",
     "@repo/shared": "workspace:*",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "4.1.8",
     "tsup": "^8.5.1",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
