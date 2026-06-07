@@ -24,4 +24,4 @@ ENV WEB_DIST_PATH=/app/web-dist
 ENV MIGRATIONS_PATH=/app/drizzle
 ENV DATABASE_URL=file:/app/data/app.db
 EXPOSE 3001
-CMD ["node", "dist/src/index.js"]
+CMD ["node", "dist/index.js"]
