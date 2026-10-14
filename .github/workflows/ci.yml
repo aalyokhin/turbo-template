@@ -50,3 +50,6 @@ jobs:
           tags: ${{ vars.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:latest
           cache-from: type=registry,ref=${{ vars.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:cache
           cache-to: type=registry,ref=${{ vars.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:cache,mode=max
+
+      - name: Deploy via Arcane
+        run: curl -fsS -X POST "${{ secrets.ARCANE_WEBHOOK }}"
